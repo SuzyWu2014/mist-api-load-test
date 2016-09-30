@@ -4,7 +4,7 @@
 
 Install `Locust`, refer to [Locust Installation](http://docs.locust.io/en/latest/installation.html)
 
-```
+```bash
 pip install locustio
 ```
 

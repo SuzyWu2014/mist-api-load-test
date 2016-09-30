@@ -1,3 +1,6 @@
 virtual_env/
 config.py
+configuration.json
 *.pyc
+.DS_Store
+locations-api-test-plan.md
