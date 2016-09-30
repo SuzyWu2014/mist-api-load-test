@@ -4,3 +4,4 @@ configuration.json
 *.pyc
 .DS_Store
 locations-api-test-plan.md
+locations.json

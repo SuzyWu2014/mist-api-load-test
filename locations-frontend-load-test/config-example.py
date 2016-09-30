@@ -1,0 +1,2 @@
+TOKEN = "token"
+LOCATION_IDS = set([u'72cad62c973a735a1b03e1c206fb76e0', u'97f48d6ea232dee0c9ff2f96730f5579', u'bc913eb93c8496767a82dd9d77d17707'])

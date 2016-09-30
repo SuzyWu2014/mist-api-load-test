@@ -1,0 +1,12 @@
+{
+    "hostname": "https://oregonstateuniversity-dev.apigee.net/",
+    "version": "v1",
+
+    "api": "/locations",
+
+    "token_endpoint": "/token",
+    "locations_endpoint": "/",
+
+    "client_id": "key",
+    "client_secret": "secret"
+}

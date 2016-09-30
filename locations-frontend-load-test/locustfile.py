@@ -1,14 +1,10 @@
 from locust import HttpLocust, TaskSet, task
 from utils import *
+from config import *
 import random
 
 
 class UserBehavior(TaskSet):
-
-    def on_start(self):
-        self.token = getAccessToken()
-        self.location_ids = getLocationIds()
-
 
     @task(1)
     def getLocationsByPage(self):
@@ -16,16 +12,16 @@ class UserBehavior(TaskSet):
         url = "/v1/locations?page[number]=%d" % page_num
         self.client.get(url,
          name="getLocationsByPage",
-         headers={'Authorization': self.token}
+         headers={'Authorization': TOKEN}
          )
 
     @task(2)
     def getLocationsById(self):
         url = "/v1/locations/"
-        for param in self.location_ids:
+        for param in LOCATION_IDS:
             self.client.get(url + param,
              name="getLocationsById",
-             headers={'Authorization': self.token}
+             headers={'Authorization': TOKEN}
              )
 
 class ApiUser(HttpLocust):

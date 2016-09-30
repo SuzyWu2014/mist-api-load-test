@@ -4,7 +4,7 @@ from locust import HttpLocust, TaskSet, task
 class UserBehavior(TaskSet):
 
     @task(2)
-    def request_static_urls(self):
+    def request_example1(self):
         urls = []
         for url in urls:
             self.client.get(url,
@@ -13,7 +13,7 @@ class UserBehavior(TaskSet):
                     )
 
     @task(5)
-    def request_dynamic_urls(self):
+    def request_example2(self):
         url = "https://example.com/"
         params = []
         token = ""
